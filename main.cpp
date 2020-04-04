@@ -20,8 +20,8 @@ public:
 template<class T>
 class List
 {
-public:
 	std::shared_ptr<Element<T>> first; 
+public:
 
 	List()
 	{
