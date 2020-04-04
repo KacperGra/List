@@ -1,14 +1,18 @@
 #include <iostream>
 #include <string>
+#include <memory>
+
 
 template<class T> 
 class Element
 {
 public:
 	T value; 
-	Element<T>* next; 
-	Element()
+	std::shared_ptr<Element<T>> next; 
+	
+	Element(T _Nvalue)
 	{
+		value = _Nvalue;
 		next = nullptr; 
 	}
 }; 
@@ -17,7 +21,7 @@ template<class T>
 class List
 {
 public:
-	Element<T>* first; 
+	std::shared_ptr<Element<T>> first; 
 
 	List()
 	{
@@ -26,8 +30,7 @@ public:
 
 	void push_back(T x) 
 	{
-		Element<T>* newElement = new Element<T>(); 
-		newElement->value = x;
+		auto NewElement = std::make_shared<Element<T>>(Element<T>(_Nvalue)
 
 		if (first == nullptr) 
 		{
@@ -35,7 +38,7 @@ public:
 			return;
 		}
 
-		Element<T>* current = first;
+		std::shared_ptr<Element<T>> current = first;
 
 		while (current->next != nullptr)
 		{
@@ -47,7 +50,7 @@ public:
 
 	void print()
 	{
-		Element<T>* current = first;
+		 std::shared_ptr<Element<T>> current = first;
 		while (current != nullptr)
 		{
 			std::cout << current->value << std::endl;
@@ -59,7 +62,7 @@ public:
 	{
 		unsigned int counter = 0;
 
-		Element<T>* current = first;
+		 std::shared_ptr<Element<T>> current = first;
 		while (current != nullptr)
 		{
 			++counter;
