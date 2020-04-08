@@ -1,13 +1,29 @@
 /home/kacper/bin/clion-2019.3.4/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/kacper/Pulpit/List
-CMake Error at CMakeLists.txt:1 (cmake_minimum_required):
-  cmake_minimum_required called with unknown argument "Version".
+-- Configuring done
+CMake Error at CMakeLists.txt:25 (add_executable):
+  Error evaluating generator expression:
+
+    $<TARGET_OBJECTS:source_objects_lib>
+
+  Objects of target "source_objects_lib" referenced but no such target
+  exists.
 
 
-CMake Error at CMakeLists.txt:13 (include):
-  include could not find load file:
+CMake Error at CMakeLists.txt:18 (add_executable):
+  Error evaluating generator expression:
 
-    External_Gtest.cmake
+    $<TARGET_OBJECTS:source_objects_lib>
+
+  Objects of target "source_objects_lib" referenced but no such target
+  exists.
 
 
--- Configuring incomplete, errors occurred!
-See also "/home/kacper/Pulpit/List/cmake-build-debug/CMakeFiles/CMakeOutput.log".
+CMake Error at CMakeLists.txt:25 (add_executable):
+  No SOURCES given to target: List_UT
+
+
+CMake Error at CMakeLists.txt:18 (add_executable):
+  No SOURCES given to target: List
+
+
+CMake Generate step failed.  Build files cannot be regenerated correctly.

@@ -1,0 +1,1 @@
+cmd='/home/kacper/bin/clion-2019.3.4/bin/cmake/linux/bin/cmake;-GCodeBlocks - Unix Makefiles;<SOURCE_DIR><SOURCE_SUBDIR>'
