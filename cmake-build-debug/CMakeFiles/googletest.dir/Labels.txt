@@ -1,0 +1,13 @@
+# Target labels
+ googletest
+# Source files and their labels
+/home/kacper/Pulpit/List/cmake-build-debug/CMakeFiles/googletest
+/home/kacper/Pulpit/List/cmake-build-debug/CMakeFiles/googletest.rule
+/home/kacper/Pulpit/List/cmake-build-debug/CMakeFiles/googletest-complete.rule
+/home/kacper/Pulpit/List/cmake-build-debug/googletest-prefix/src/googletest-stamp/googletest-install.rule
+/home/kacper/Pulpit/List/cmake-build-debug/googletest-prefix/src/googletest-stamp/googletest-mkdir.rule
+/home/kacper/Pulpit/List/cmake-build-debug/googletest-prefix/src/googletest-stamp/googletest-download.rule
+/home/kacper/Pulpit/List/cmake-build-debug/googletest-prefix/src/googletest-stamp/googletest-update.rule
+/home/kacper/Pulpit/List/cmake-build-debug/googletest-prefix/src/googletest-stamp/googletest-patch.rule
+/home/kacper/Pulpit/List/cmake-build-debug/googletest-prefix/src/googletest-stamp/googletest-configure.rule
+/home/kacper/Pulpit/List/cmake-build-debug/googletest-prefix/src/googletest-stamp/googletest-build.rule

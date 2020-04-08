@@ -53,12 +53,16 @@ CMAKE_BINARY_DIR = /home/kacper/Pulpit/List/cmake-build-debug
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all:
+all: CMakeFiles/List_ut.dir/all
+all: CMakeFiles/googletest.dir/all
+all: CMakeFiles/List.dir/all
 
 .PHONY : all
 
 # The main recursive "clean" target.
-clean:
+clean: CMakeFiles/List_ut.dir/clean
+clean: CMakeFiles/googletest.dir/clean
+clean: CMakeFiles/List.dir/clean
 
 .PHONY : clean
 
@@ -66,6 +70,87 @@ clean:
 preinstall:
 
 .PHONY : preinstall
+
+#=============================================================================
+# Target rules for target CMakeFiles/List_ut.dir
+
+# All Build rule for target.
+CMakeFiles/List_ut.dir/all: CMakeFiles/googletest.dir/all
+	$(MAKE) -f CMakeFiles/List_ut.dir/build.make CMakeFiles/List_ut.dir/depend
+	$(MAKE) -f CMakeFiles/List_ut.dir/build.make CMakeFiles/List_ut.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/kacper/Pulpit/List/cmake-build-debug/CMakeFiles --progress-num=3,4 "Built target List_ut"
+.PHONY : CMakeFiles/List_ut.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/List_ut.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/kacper/Pulpit/List/cmake-build-debug/CMakeFiles 10
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/List_ut.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/kacper/Pulpit/List/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/List_ut.dir/rule
+
+# Convenience name for target.
+List_ut: CMakeFiles/List_ut.dir/rule
+
+.PHONY : List_ut
+
+# clean rule for target.
+CMakeFiles/List_ut.dir/clean:
+	$(MAKE) -f CMakeFiles/List_ut.dir/build.make CMakeFiles/List_ut.dir/clean
+.PHONY : CMakeFiles/List_ut.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/googletest.dir
+
+# All Build rule for target.
+CMakeFiles/googletest.dir/all:
+	$(MAKE) -f CMakeFiles/googletest.dir/build.make CMakeFiles/googletest.dir/depend
+	$(MAKE) -f CMakeFiles/googletest.dir/build.make CMakeFiles/googletest.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/kacper/Pulpit/List/cmake-build-debug/CMakeFiles --progress-num=5,6,7,8,9,10,11,12 "Built target googletest"
+.PHONY : CMakeFiles/googletest.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/googletest.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/kacper/Pulpit/List/cmake-build-debug/CMakeFiles 8
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/googletest.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/kacper/Pulpit/List/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/googletest.dir/rule
+
+# Convenience name for target.
+googletest: CMakeFiles/googletest.dir/rule
+
+.PHONY : googletest
+
+# clean rule for target.
+CMakeFiles/googletest.dir/clean:
+	$(MAKE) -f CMakeFiles/googletest.dir/build.make CMakeFiles/googletest.dir/clean
+.PHONY : CMakeFiles/googletest.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/List.dir
+
+# All Build rule for target.
+CMakeFiles/List.dir/all:
+	$(MAKE) -f CMakeFiles/List.dir/build.make CMakeFiles/List.dir/depend
+	$(MAKE) -f CMakeFiles/List.dir/build.make CMakeFiles/List.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/kacper/Pulpit/List/cmake-build-debug/CMakeFiles --progress-num=1,2 "Built target List"
+.PHONY : CMakeFiles/List.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/List.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/kacper/Pulpit/List/cmake-build-debug/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/List.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/kacper/Pulpit/List/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/List.dir/rule
+
+# Convenience name for target.
+List: CMakeFiles/List.dir/rule
+
+.PHONY : List
+
+# clean rule for target.
+CMakeFiles/List.dir/clean:
+	$(MAKE) -f CMakeFiles/List.dir/build.make CMakeFiles/List.dir/clean
+.PHONY : CMakeFiles/List.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

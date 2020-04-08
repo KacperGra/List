@@ -1,0 +1,1 @@
+/usr/bin/c++   -Wall -Werror -pedantic -g   CMakeFiles/List_ut.dir/Test/listTest.cpp.o  -o bin/List_ut googletest-prefix/src/googletest-build/lib/libgtest_main.a googletest-prefix/src/googletest-build/lib/libgtest.a googletest-prefix/src/googletest-build/lib/libgmock_main.a googletest-prefix/src/googletest-build/lib/libgmock.a -lpthread 

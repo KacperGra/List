@@ -1,2 +1,5 @@
 /home/kacper/Pulpit/List/cmake-build-debug/CMakeFiles/rebuild_cache.dir
 /home/kacper/Pulpit/List/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/kacper/Pulpit/List/cmake-build-debug/CMakeFiles/List_ut.dir
+/home/kacper/Pulpit/List/cmake-build-debug/CMakeFiles/googletest.dir
+/home/kacper/Pulpit/List/cmake-build-debug/CMakeFiles/List.dir

@@ -1,0 +1,43 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/home/kacper/Pulpit/List/cmake-build-debug/CMakeFiles/googletest"
+		},
+		{
+			"file" : "/home/kacper/Pulpit/List/cmake-build-debug/CMakeFiles/googletest.rule"
+		},
+		{
+			"file" : "/home/kacper/Pulpit/List/cmake-build-debug/CMakeFiles/googletest-complete.rule"
+		},
+		{
+			"file" : "/home/kacper/Pulpit/List/cmake-build-debug/googletest-prefix/src/googletest-stamp/googletest-install.rule"
+		},
+		{
+			"file" : "/home/kacper/Pulpit/List/cmake-build-debug/googletest-prefix/src/googletest-stamp/googletest-mkdir.rule"
+		},
+		{
+			"file" : "/home/kacper/Pulpit/List/cmake-build-debug/googletest-prefix/src/googletest-stamp/googletest-download.rule"
+		},
+		{
+			"file" : "/home/kacper/Pulpit/List/cmake-build-debug/googletest-prefix/src/googletest-stamp/googletest-update.rule"
+		},
+		{
+			"file" : "/home/kacper/Pulpit/List/cmake-build-debug/googletest-prefix/src/googletest-stamp/googletest-patch.rule"
+		},
+		{
+			"file" : "/home/kacper/Pulpit/List/cmake-build-debug/googletest-prefix/src/googletest-stamp/googletest-configure.rule"
+		},
+		{
+			"file" : "/home/kacper/Pulpit/List/cmake-build-debug/googletest-prefix/src/googletest-stamp/googletest-build.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"googletest"
+		],
+		"name" : "googletest"
+	}
+}
