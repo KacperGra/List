@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/kacper/Pulpit/List/main.cpp" "/home/kacper/Pulpit/List/build/CMakeFiles/List.dir/main.cpp.o"
+  "/home/kacper/Pulpit/List/Test/listTest.cpp" "/home/kacper/Pulpit/List/build/CMakeFiles/List_ut.dir/Test/listTest.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -12,6 +12,8 @@ set(CMAKE_CXX_COMPILER_ID "GNU")
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "../Include"
   "../Test"
+  "googletest-prefix/src/googletest/googletest/include"
+  "googletest-prefix/src/googletest/googlemock/include"
   )
 
 # Targets to which this target links.

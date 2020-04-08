@@ -111,17 +111,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named List_UT
+# Target rules for targets named List_ut
 
 # Build rule for target.
-List_UT: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 List_UT
-.PHONY : List_UT
+List_ut: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 List_ut
+.PHONY : List_ut
 
 # fast build rule for target.
-List_UT/fast:
-	$(MAKE) -f CMakeFiles/List_UT.dir/build.make CMakeFiles/List_UT.dir/build
-.PHONY : List_UT/fast
+List_ut/fast:
+	$(MAKE) -f CMakeFiles/List_ut.dir/build.make CMakeFiles/List_ut.dir/build
+.PHONY : List_ut/fast
 
 #=============================================================================
 # Target rules for targets named googletest
@@ -149,6 +149,60 @@ List/fast:
 	$(MAKE) -f CMakeFiles/List.dir/build.make CMakeFiles/List.dir/build
 .PHONY : List/fast
 
+Test/listTest.o: Test/listTest.cpp.o
+
+.PHONY : Test/listTest.o
+
+# target to build an object file
+Test/listTest.cpp.o:
+	$(MAKE) -f CMakeFiles/List_ut.dir/build.make CMakeFiles/List_ut.dir/Test/listTest.cpp.o
+.PHONY : Test/listTest.cpp.o
+
+Test/listTest.i: Test/listTest.cpp.i
+
+.PHONY : Test/listTest.i
+
+# target to preprocess a source file
+Test/listTest.cpp.i:
+	$(MAKE) -f CMakeFiles/List_ut.dir/build.make CMakeFiles/List_ut.dir/Test/listTest.cpp.i
+.PHONY : Test/listTest.cpp.i
+
+Test/listTest.s: Test/listTest.cpp.s
+
+.PHONY : Test/listTest.s
+
+# target to generate assembly for a file
+Test/listTest.cpp.s:
+	$(MAKE) -f CMakeFiles/List_ut.dir/build.make CMakeFiles/List_ut.dir/Test/listTest.cpp.s
+.PHONY : Test/listTest.cpp.s
+
+main.o: main.cpp.o
+
+.PHONY : main.o
+
+# target to build an object file
+main.cpp.o:
+	$(MAKE) -f CMakeFiles/List.dir/build.make CMakeFiles/List.dir/main.cpp.o
+.PHONY : main.cpp.o
+
+main.i: main.cpp.i
+
+.PHONY : main.i
+
+# target to preprocess a source file
+main.cpp.i:
+	$(MAKE) -f CMakeFiles/List.dir/build.make CMakeFiles/List.dir/main.cpp.i
+.PHONY : main.cpp.i
+
+main.s: main.cpp.s
+
+.PHONY : main.s
+
+# target to generate assembly for a file
+main.cpp.s:
+	$(MAKE) -f CMakeFiles/List.dir/build.make CMakeFiles/List.dir/main.cpp.s
+.PHONY : main.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -157,9 +211,15 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... List_UT"
+	@echo "... List_ut"
 	@echo "... googletest"
 	@echo "... List"
+	@echo "... Test/listTest.o"
+	@echo "... Test/listTest.i"
+	@echo "... Test/listTest.s"
+	@echo "... main.o"
+	@echo "... main.i"
+	@echo "... main.s"
 .PHONY : help
 
 

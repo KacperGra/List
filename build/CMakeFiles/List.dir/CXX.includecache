@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../Include/List.h
+iostream
+-
+string
+-
+memory
+-
+
+/home/kacper/Pulpit/List/main.cpp
+List.h
+/home/kacper/Pulpit/List/List.h
+

@@ -15,9 +15,9 @@ public:
     T value;
     std::shared_ptr<Element<T>> next;
 
-    Element(T _Nvalue)
+    Element(T _value)
     {
-        value = _Nvalue;
+        value = _value;
         next = nullptr;
     }
 };
@@ -25,21 +25,20 @@ public:
 template<class T>
 class List
 {
-    std::shared_ptr<Element<T>> first;
 public:
-
+    std::shared_ptr<Element<T>> first;
     List()
     {
         first = nullptr;
     }
 
-    void push_back(T x)
+    void push_back(T _value)
     {
-        auto NewElement = std::make_shared<Element<T>>(Element<T>(_Nvalue)
+        auto NewElement = std::make_shared<Element<T>>(Element<T>(_value));
 
         if (first == nullptr)
         {
-            first = newElement;
+            first = NewElement;
             return;
         }
 
@@ -50,7 +49,7 @@ public:
             current = current->next;
         }
 
-        current->next = newElement;
+        current->next = NewElement;
     }
 
     void print()
